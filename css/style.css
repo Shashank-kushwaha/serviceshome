@@ -1,0 +1,255 @@
+*{margin: 0px; padding: 0px; box-sizing: border-box;}
+.container{
+    width: 100%;
+    height: 80px;
+    background-color: #FF8D29;
+    line-height: 20px;
+    justify-content: space-around;
+    display: flex;
+}
+.logo{
+    padding: 10px;
+    font-size: 25px;
+    color: darkblue;
+}
+.logo p{
+    font-size: 14px;
+}
+.nav ul{
+    display: flex;
+    list-style-type: none;
+    line-height: 80px;
+}
+.nav ul li a{
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+}
+.nav ul li a:hover{
+    color: lightblue;
+    transition: 0.6s ease;
+}
+.container .menu-btn i{
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 40px;
+}
+#click{
+    display: none;
+}
+.home{
+    background-image: url('../img/Banner.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cont h2,h3{
+    color: white;
+    text-align: center;
+}
+.cont h2{
+    padding-top: 3%;
+}
+.cont p{
+    color: white;
+    font-size: 20px;
+    float: right;
+    padding-top: 22%;
+}
+.cont .btn{
+    background-color: #EC994B;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 2%;
+    margin-left: 50%;
+}
+.service{
+    width: 100%;
+    height: 100vh;
+    /* text-align: center; */
+    padding: 20px;
+}
+.service h1{
+    font-size: 35px;
+    text-align: center;
+}
+.service p{ 
+    padding: 20px;
+}
+.boxes{
+    display: flex;
+    justify-content: space-around;
+}
+.box .fa-solid{
+    color: #FF8D29;
+    font-size: 70px;
+    padding-top: 36px;
+    margin-left: 35%;
+}
+.service .box{
+    width: 250px;
+    height: 400px;
+    background-color: #F1EEE9;
+}
+.box h3{
+    padding: 20px;
+    font-size: 25px;
+}
+.box .btn{
+    padding: 10px;
+    color: white;
+    background-color: #001D6E;
+    text-align: center;
+    margin-left: 25%;
+}
+.our-team{
+    width: 100%;
+    height: 500px;
+    margin-top: 8%;
+    background-color: #001D6E;
+    display: flex;
+}
+.our-team img{
+    width: 1200px;
+    height: 350px;
+    align-items: center;
+    padding-left: 10%;
+    margin-top: 6%;
+}
+.content{
+    color: white;
+    padding: 20px;
+    margin-top: 5%;
+}
+.content p{
+    padding: 20px;
+}
+.our-clients h2{
+    margin-top: 6%;
+    padding-right: 60%;
+}
+.our-clients img{
+    padding-left: 10%;
+    /* margin-left: 20%; */
+}
+.footer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #251D3A;
+    justify-content: space-around;
+}
+.sec h3{
+    padding: 20px;
+}
+.sec{
+    color: grey;
+}
+.sec ul li{
+    list-style-type: none;
+}
+.sec ul li a{
+    text-decoration: none;
+    color: grey;
+}
+#footer-content{
+    color: white;
+}
+
+
+@media (max-width: 960px) {
+    .container .menu-btn i{
+        display: block;
+        line-height: 80px;
+
+    }
+    #click:checked ~ .menu-btn i::before{
+        content: "\f00d";
+    }
+    .nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 88px;
+        left: -100%;
+        background-color: #FF8D29;
+        display: block;
+        text-align: center;
+        transition: 0.3s ease;
+    }
+    #click:checked ~ .nav ul{
+        left: 0%;
+    }
+    .nav ul li{
+        margin: 10px 0px;
+    }
+    .nav ul li a{
+        font-size: 20px;
+    }
+
+    .cont h2,h3{
+        color: white;
+        font-size: 18px;
+        text-align: center;
+    }
+    .cont h2{
+        padding-top: 8%;
+    }
+    .cont p{
+        color: white;
+        font-size: 18px;
+        float: right;
+        padding-top: 22%;
+        text-align: center;
+    }
+    .cont .btn{
+        background-color: #EC994B;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 8%;
+        margin-left: 40%;
+    }
+
+    .boxes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .box .fa-solid{
+        color: #FF8D29;
+        font-size: 50px;
+        padding-top: 36px;
+    }
+    .service .box{
+        width: 250px;
+        height: 400px;
+        background-color: #F1EEE9;
+    }
+
+    .our-team{
+        width: 100%;
+        height: 750px;
+        background-color: #001D6E;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .our-team img{
+        width: 300px;
+        height: 150px;
+        align-items: center;
+        padding-left: 10%;
+    }
+
+    .our-clients h2{
+        margin-top: 6%;
+        /* padding-left: 8%; */
+    }
+    .our-clients img{
+        margin-top: -10%;
+        margin-left: 20%;
+    }
+}
